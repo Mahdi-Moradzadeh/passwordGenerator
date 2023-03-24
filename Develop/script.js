@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword(content) {
+function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
@@ -59,7 +59,7 @@ function generatePassword(){
 
   for(var i = 0; i < promAns[0]; i++){
     randGen = content[Math.floor(Math.random() * content.length)];
-    outPass = outpass.concat(randGen);
+    outPass = outPass.concat(randGen);
     }
     return outPass;
 }
